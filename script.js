@@ -9,6 +9,7 @@ carForm.addEventListener("submit", function (event) {
   const image = document.getElementById("image").value;
   const fuel = document.getElementById("fuel").value;
   const price = document.getElementById("price").value;
+  const year = document.getElementById("year").value;
 
   const carCard = document.createElement("div");
   carCard.className = "car-card";
@@ -19,7 +20,10 @@ carForm.addEventListener("submit", function (event) {
   <p>${description}</p>
   <p>Auto kaina: ${price}</p>
   <p>Auto kuras: ${fuel}</p>
+  <p>Auto metai: ${year}</p>
   `;
 
   carsDiv.appendChild(carCard);
+
+  carForm.reset();
 });
