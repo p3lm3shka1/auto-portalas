@@ -7,6 +7,27 @@
     <title>auto-projektas</title>
   </head>
   <body>
+    <div class="container">
+      <form id="car">
+        <input type="text" placeholder="Auto Pavadinimas" id="name" required />
+        <input
+          type="text"
+          placeholder="Trumpas Aprasymas"
+          id="descriptiom"
+          required
+        />
+        <input type="number" placeholder="Kaina" id="price" required />
+        <input type="text" placeholder="Nuotraukos URL" id="image" required />
+        <select id="fuel">
+          <option value="Benzinas">Benzinas</option>
+          <option value="Dyzelis">Dyzelis</option>
+          <option value="Elektra">Elektra</option>
+          <option value="Hibridas">Hibridas</option>
+        </select>
+        <button type="sumbit">Prideti</button>
+      </form>
+      <div id="cars"></div>
+    </div>
     <script src="script.js" defer></script>
   </body>
 </html>
