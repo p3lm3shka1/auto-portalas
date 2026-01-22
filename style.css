@@ -28,3 +28,18 @@ button {
     margin-bottom: 10px;
   }
 }
+
+.Benzinas {
+  background: green;
+  color: white;
+}
+
+.Dyzelis {
+  background: grey;
+  color: white;
+}
+
+.Eketra {
+  background: lightblue;
+  color: white;
+}
