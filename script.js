@@ -21,22 +21,19 @@ carForm.addEventListener("submit", function (event) {
   const price = Number(priceValue);
   const year = document.getElementById("year").value;
 
-  // ❌ VALIDATION
   if (name.length < 3) {
     alert("Pavadinimas turi būti bent 3 simbolių.");
     return;
   }
 
-  if (priceValue === "" || price <= 0 || isNaN(price)) {
-    alert("Kaina turi būti didesnė nei 0.");
+  if (price <= 0) {
+    alert("Kaina turi būti didesne nei 0 Eur!");
     return;
   }
 
-  // ✅ CREATE CARD
   const carCard = document.createElement("div");
   carCard.classList.add("car-card");
 
-  // 🔥 spalva pagal kurą
   carCard.classList.add(fuel);
 
   carCard.innerHTML = `
